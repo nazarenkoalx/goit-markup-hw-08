@@ -1,0 +1,31 @@
+.clients__list {
+  display: flex;
+  gap: 30px;
+}
+
+.clients__link {
+  border: 1px solid var(--social-list-icon-fill);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 170px;
+  height: 92px;
+
+  color: var(--social-list-icon-fill);
+  fill: currentColor;
+  transition: border var(--animation-duration) var(--animation-timing-function),
+    color var(--animation-duration) var(--animation-timing-function);
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+  }
+}
+
+.clients__logo-icon {
+  width: 106px;
+  height: 60px;
+}

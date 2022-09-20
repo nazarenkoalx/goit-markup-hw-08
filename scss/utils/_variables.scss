@@ -1,0 +1,37 @@
+:root {
+  /* colors */
+  --main-theme-color: #ffffff;
+  --secondary-theme-color: #f5f5f5;
+  --hero-bg-color: #c4c4c4;
+  --hero-overlay-color: rgba(47, 48, 58, 0.4);
+  --our-work-overlay-bg: rgba(47, 48, 58, 0.8);
+  --footer-bg-color: #2f303a;
+  --filter-button-bg-color: #f5f4fa;
+  --main-text-color: #212121;
+  --secondary-text-color: #757575;
+  --logo-header-color: #000;
+  --accent-color: #2196f3;
+  --button-bg-accent-color: #188ce8;
+  --footer-contact-color: rgba(255, 255, 255, 0.6);
+  --border-color: #ececec;
+  --button-shadow: rgba(0, 0, 0, 0.15);
+  --feature-bg-color: #f5f4fa;
+  --team-member-box-shadow-color1: rgba(0, 0, 0, 0.12);
+  --team-member-box-shadow-color2: rgba(0, 0, 0, 0.14);
+  --team-member-box-shadow-color3: rgba(0, 0, 0, 0.2);
+  --social-list-icon-fill: #afb1b8;
+  --footer-social-link-color: rgba(255, 255, 255, 0.1);
+  --portfolio-card-shadow-color1: rgba(0, 0, 0, 0.1);
+  --portfolio-card-shadow-color2: rgba(0, 0, 0, 0.8);
+  --portfolio-card-shadow-color3: rgba(0, 0, 0, 0.12);
+  --portfolio-card-border-color: #eeeeee;
+  --portfolio-overlay-color: rgba(33, 150, 243, 0.9);
+
+  /* fonts */
+  --primary-font: "roboto", sans-serif;
+  --secondary-font: "raleway", sans-serif;
+
+  /* animations */
+  --animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --animation-duration: 250ms;
+}

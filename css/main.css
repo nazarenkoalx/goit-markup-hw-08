@@ -1356,7 +1356,6 @@ body {
     margin: 0 auto;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(var(--hero-overlay-color), var(--hero-overlay-color)), url(/images/main/mobile/mob-hero.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -1372,6 +1371,11 @@ body {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--main-theme-color);
+  }
+}
+@media screen and (max-width: 767px) {
+  .hero__wrapper {
+    background-image: linear-gradient(var(--hero-overlay-color), var(--hero-overlay-color)), url(/images/main/mobile/mob-hero.jpg);
   }
 }
 @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {

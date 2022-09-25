@@ -1,3 +1,12 @@
+@media screen and(max-width:767px) {
+  .clients__list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
 .clients__list {
   display: flex;
   gap: 30px;
@@ -10,7 +19,7 @@
   justify-content: center;
   align-items: center;
 
-  width: 170px;
+  width: 210px;
   height: 92px;
 
   color: var(--social-list-icon-fill);
@@ -28,4 +37,25 @@
 .clients__logo-icon {
   width: 106px;
   height: 60px;
+}
+
+@media screen and(min-width:768px) {
+  .clients__list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .clients__link {
+    width: 226px;
+  }
+}
+
+@media screen and(min-width:1200px) {
+  .clients__list {
+    flex-wrap: nowrap;
+  }
+  .clients__link {
+    width: 170px;
+  }
 }

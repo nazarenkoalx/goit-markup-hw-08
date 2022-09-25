@@ -39,6 +39,14 @@
             </ul>
           </div>
         </nav>
+        <button data-menu-open class="menu-button" type="button">
+          <svg class="menu-button__svg" heigt="40px" width="40px">
+            <use
+              class="menu-button__icon"
+              href="./images/sprite.svg#icon-menu-lines"
+            ></use>
+          </svg>
+        </button>
         <ul class="header-contacts list">
           <li class="header-contacts__item">
             <a
@@ -70,6 +78,64 @@
           </li>
         </ul>
       </div>
+      <div data-menu class="mobile-menu">
+        <div class="comtainer mobile-menu__container">
+          <button
+            data-menu-close
+            class="mobile-menu__close-button"
+            type="button"
+          >
+            <svg class="mobile-menu__close-svg">
+              <use
+                class="mobile-menu__close-icon"
+                href="./images/sprite.svg#icon-menu-cross"
+              ></use>
+            </svg>
+          </button>
+
+          <ul class="mobile-menu__list list">
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link link current">Студія</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link link">Портфоліо</a>
+            </li>
+            <li class="mobile-menu__item">
+              <a href="#" class="mobile-menu__link link">Контакти</a>
+            </li>
+          </ul>
+          <ul class="mobile-menu__contact-list list">
+            <li class="mobile-menu__contact-item">
+              <a
+                href="tel:+380961111111"
+                class="mobile-menu__contact-link_blue mobile-menu__contact-link link"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-menu__contact-item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="mobile-menu__contact-link_grey mobile-menu__contact-link link"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-menu__social-list list">
+            <li class="mobile-menu__social-item">
+              <a href="#" class="mobile-menu__social-link link">Instagram</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a href="#" class="mobile-menu__social-link link">Twitter</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a href="#" class="mobile-menu__social-link link">Facebook</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a href="#" class="mobile-menu__social-link link">LinkedIn </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
     <!--content-->
     <main>
@@ -98,14 +164,64 @@
             </li>
           </ul>
           <ul class="project-list list">
-            <li class="project-list__item item">
+            <li class="portfolio-list-item item">
               <a class="project-list__link link" href="#">
                 <div class="project-list__overlay">
-                  <img
-                    src="./images/portfolio/project1.jpg"
-                    alt="Технокряк"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desc-proj1.webp    1x,
+                        ./images/portfolio/desc-proj1@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desc-proj1.jpg    1x,
+                        ./images/portfolio/desc-proj1@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/tab-proj1.webp    1x,
+                        ./images/portfolio/tab-proj1@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tab-proj1.jpg    1x,
+                        ./images/portfolio/tab-proj1@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/mob-proj1.webp    1x,
+                        ./images/portfolio/mob-proj1@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mob-proj1.jpg    1x,
+                        ./images/portfolio/mob-proj1@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/desc-proj1.jpg"
+                      alt="Технокряк"
+                      class="picture-img"
+                    />
+                  </picture>
                   <p class="project-list__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -121,11 +237,61 @@
             <li class="portfolio-list-item item">
               <a class="project-list__link link" href="#">
                 <div class="project-list__overlay">
-                  <img
-                    src="./images/portfolio/project2.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desc-proj2.webp    1x,
+                        ./images/portfolio/desc-proj2@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desc-proj2.jpg    1x,
+                        ./images/portfolio/desc-proj2@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/tab-proj2.webp    1x,
+                        ./images/portfolio/tab-proj2@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tab-proj2.jpg    1x,
+                        ./images/portfolio/tab-proj2@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/mob-proj2.webp    1x,
+                        ./images/portfolio/mob-proj2@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mob-proj2.jpg    1x,
+                        ./images/portfolio/mob-proj2@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/desc-proj2.jpg"
+                      alt="Технокряк"
+                      class="picture-img"
+                    />
+                  </picture>
                   <p class="project-list__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -144,11 +310,61 @@
             <li class="portfolio-list-item item">
               <a class="project-list__link link" href="#">
                 <div class="project-list__overlay">
-                  <img
-                    src="./images/portfolio/project3.jpg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desc-proj3.webp    1x,
+                        ./images/portfolio/desc-proj3@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desc-proj3.jpg    1x,
+                        ./images/portfolio/desc-proj3@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/tab-proj3.webp    1x,
+                        ./images/portfolio/tab-proj3@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tab-proj3.jpg    1x,
+                        ./images/portfolio/tab-proj3@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/mob-proj3.webp    1x,
+                        ./images/portfolio/mob-proj3@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mob-proj3.jpg    1x,
+                        ./images/portfolio/mob-proj3@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/desc-proj3.jpg"
+                      alt="Технокряк"
+                      class="picture-img"
+                    />
+                  </picture>
                   <p class="project-list__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -167,11 +383,61 @@
             <li class="portfolio-list-item item">
               <a class="project-list__link link" href="#">
                 <div class="project-list__overlay">
-                  <img
-                    src="./images/portfolio/project4.jpg"
-                    alt="Проєкт Prime"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desc-proj4.webp    1x,
+                        ./images/portfolio/desc-proj4@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desc-proj4.jpg    1x,
+                        ./images/portfolio/desc-proj4@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/tab-proj4.webp    1x,
+                        ./images/portfolio/tab-proj4@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tab-proj4.jpg    1x,
+                        ./images/portfolio/tab-proj4@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/mob-proj4.webp    1x,
+                        ./images/portfolio/mob-proj4@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mob-proj4.jpg    1x,
+                        ./images/portfolio/mob-proj4@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/desc-proj4.jpg"
+                      alt="Технокряк"
+                      class="picture-img"
+                    />
+                  </picture>
                   <p class="project-list__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -190,11 +456,61 @@
             <li class="portfolio-list-item item">
               <a class="project-list__link link" href="#">
                 <div class="project-list__overlay">
-                  <img
-                    src="./images/portfolio/project5.jpg"
-                    alt="Проєкт Boxes"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desc-proj5.webp    1x,
+                        ./images/portfolio/desc-proj5@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desc-proj5.jpg    1x,
+                        ./images/portfolio/desc-proj5@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/tab-proj5.webp    1x,
+                        ./images/portfolio/tab-proj5@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tab-proj5.jpg    1x,
+                        ./images/portfolio/tab-proj5@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/mob-proj5.webp    1x,
+                        ./images/portfolio/mob-proj5@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mob-proj5.jpg    1x,
+                        ./images/portfolio/mob-proj5@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/desc-proj5.jpg"
+                      alt="Технокряк"
+                      class="picture-img"
+                    />
+                  </picture>
                   <p class="project-list__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -213,11 +529,61 @@
             <li class="portfolio-list-item item">
               <a class="project-list__link link" href="#">
                 <div class="project-list__overlay">
-                  <img
-                    src="./images/portfolio/project6.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desc-proj6.webp    1x,
+                        ./images/portfolio/desc-proj6@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desc-proj6.jpg    1x,
+                        ./images/portfolio/desc-proj6@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/tab-proj6.webp    1x,
+                        ./images/portfolio/tab-proj6@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tab-proj6.jpg    1x,
+                        ./images/portfolio/tab-proj6@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/mob-proj6.webp    1x,
+                        ./images/portfolio/mob-proj6@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mob-proj6.jpg    1x,
+                        ./images/portfolio/mob-proj6@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/desc-proj6.jpg"
+                      alt="Технокряк"
+                      class="picture-img"
+                    />
+                  </picture>
                   <p class="project-list__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -236,11 +602,61 @@
             <li class="portfolio-list-item item">
               <a class="project-list__link link" href="#">
                 <div class="project-list__overlay">
-                  <img
-                    src="./images/portfolio/project7.jpg"
-                    alt="Видання Limited Edition"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desc-proj7.webp    1x,
+                        ./images/portfolio/desc-proj7@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desc-proj7.jpg    1x,
+                        ./images/portfolio/desc-proj7@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/tab-proj7.webp    1x,
+                        ./images/portfolio/tab-proj7@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tab-proj7.jpg    1x,
+                        ./images/portfolio/tab-proj7@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/mob-proj7.webp    1x,
+                        ./images/portfolio/mob-proj7@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mob-proj7.jpg    1x,
+                        ./images/portfolio/mob-proj7@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/desc-proj7.jpg"
+                      alt="Технокряк"
+                      class="picture-img"
+                    />
+                  </picture>
                   <p class="project-list__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -259,11 +675,61 @@
             <li class="portfolio-list-item item">
               <a class="project-list__link link" href="#">
                 <div class="project-list__overlay">
-                  <img
-                    src="./images/portfolio/project8.jpg"
-                    alt="Проєкт LAB"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desc-proj8.webp    1x,
+                        ./images/portfolio/desc-proj8@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desc-proj8.jpg    1x,
+                        ./images/portfolio/desc-proj8@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/tab-proj8.webp    1x,
+                        ./images/portfolio/tab-proj8@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tab-proj8.jpg    1x,
+                        ./images/portfolio/tab-proj8@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/mob-proj8.webp    1x,
+                        ./images/portfolio/mob-proj8@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mob-proj8.jpg    1x,
+                        ./images/portfolio/mob-proj8@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/desc-proj8.jpg"
+                      alt="Технокряк"
+                      class="picture-img"
+                    />
+                  </picture>
                   <p class="project-list__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу
@@ -282,11 +748,61 @@
             <li class="portfolio-list-item item">
               <a class="project-list__link link" href="#">
                 <div class="project-list__overlay">
-                  <img
-                    src="./images/portfolio/project9.jpg"
-                    alt="Growing Business"
-                    width="370"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/desc-proj9.webp    1x,
+                        ./images/portfolio/desc-proj9@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/desc-proj9.jpg    1x,
+                        ./images/portfolio/desc-proj9@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/tab-proj9.webp    1x,
+                        ./images/portfolio/tab-proj9@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/tab-proj9.jpg    1x,
+                        ./images/portfolio/tab-proj9@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/mob-proj9.webp    1x,
+                        ./images/portfolio/mob-proj9@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/mob-proj9.jpg    1x,
+                        ./images/portfolio/mob-proj9@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/desc-proj9.jpg"
+                      alt="Технокряк"
+                      class="picture-img"
+                    />
+                  </picture>
                   <p class="project-list__overlay-text">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
                     функціоналу та сервісів. Все це дозволить відвідувачу

@@ -1,6 +1,6 @@
 @media screen and(max-width:767px) {
   .filter-list {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
@@ -11,13 +11,14 @@
     padding-left: 25px;
     padding-right: 25px;
 
-    min-width: 63px;
+    min-width: 73px;
 
     background-color: var(--filter-button-bg-color);
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
+    letter-spacing: 0.03em;
     cursor: pointer;
 
     border: 0;

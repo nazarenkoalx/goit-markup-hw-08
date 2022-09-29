@@ -53,12 +53,16 @@
     color: var(--main-theme-color);
   }
 
-  .subsription-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  .footer-subscription {
     width: 100%;
+    text-align: center;
+  }
+
+  .subsription-form {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
   }
 
   .subsription-form__input {
@@ -69,7 +73,7 @@
     padding-left: 16px;
     padding-right: 16px;
 
-    width: 450px;
+    width: 100%;
 
     font-size: 16px;
     line-height: 1.25;

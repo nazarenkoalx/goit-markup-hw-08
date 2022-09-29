@@ -3,12 +3,20 @@
   border: none;
   background-color: transparent;
   padding: 0;
+  transition: color var(--animation-duration) var(--animation-timing-function);
+  fill: currentColor;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 .menu-button__svg {
   width: 40px;
   height: 40px;
-  color: var(--main-text-color);
+  fill: currentColor;
 }
+
 .menu-button__icon {
   fill: currentColor;
 }

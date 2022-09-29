@@ -2,14 +2,14 @@
   .clients__list {
     display: flex;
     gap: 30px;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: center;
   }
 }
 
-.clients__list {
-  display: flex;
-  gap: 30px;
+.clients__list-item {
+  flex-basis: calc((100% - 30px) / 2);
 }
 
 .clients__link {
@@ -19,7 +19,6 @@
   justify-content: center;
   align-items: center;
 
-  width: 210px;
   height: 92px;
 
   color: var(--social-list-icon-fill);

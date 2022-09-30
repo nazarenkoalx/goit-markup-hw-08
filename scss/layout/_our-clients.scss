@@ -45,6 +45,10 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  .clients__list-item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
   .clients__link {
     width: 226px;
   }

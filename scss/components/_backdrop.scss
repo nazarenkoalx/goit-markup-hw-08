@@ -7,6 +7,8 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
 
+  overflow: scroll;
+
   opacity: 1;
 
   transition: opacity var(--animation-duration) var(--animation-timing-function),

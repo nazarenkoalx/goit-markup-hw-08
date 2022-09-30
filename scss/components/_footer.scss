@@ -112,19 +112,14 @@
   .footer-wrapper {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
   .footer__address-wrapper {
     display: flex;
     justify-content: space-around;
     margin-bottom: 60px;
-  }
-
-  .footer__address-wrapper {
-    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   .footer-left-side {
@@ -218,6 +213,7 @@
   .footer-wrapper {
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
   }
 
   .footer-left-side {
@@ -229,6 +225,7 @@
   }
   .footer__title {
     margin-bottom: 20px;
+    text-align: start;
   }
 
   .footer-subscription {

@@ -145,6 +145,12 @@
   }
 }
 
+@media screen and(min-width:320px) {
+  .mobile-menu__social-link {
+    font-size: 12px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
